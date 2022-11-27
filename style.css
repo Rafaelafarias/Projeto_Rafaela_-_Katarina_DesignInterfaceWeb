@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
 
+:root {
+  --brown: #5a3535;
+  --primary: #ffc921 ;
+}
 * {
   box-sizing: border-box;
 }
@@ -10,102 +14,46 @@ body {
   background-color: #F3EBD2 !important;
 }
 
-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  background-image: url("imagens/background_navbar.jpg"); /*imagem verde por tras da nav*/
-  z-index: 99;
-}
-
-.navGeral{
-  display: flex;
-}
-
-.paoEPesquisa{
-  display: flex;
-  flex-direction:row; 
-  justify-content:left;
-  align-items: center;
-}
-
-#pao_icone {
-  margin-left: 20px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+.navbar {
+  background-color: var(--brown);
 }
 
 .nav-link{
-  color:#523838;
+  color:rgb(211, 211, 211) !important;
 }
 
-nav li {
-  padding-top: 5px;
-  float: left;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:13px;
-  list-style: none;
-  margin-left: 40px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+.nav-link:hover{
+  color: var(--primary)!important;
 }
 
-.header_logo {
-  text-align: center;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #523838;
-  font-family: 'My Soul', cursive;
-  color: #B0B888;
+.nav-link.active{
+  color: var(--primary) !important;
 }
 
-#pao_icone{
-  padding-top: 7px;
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,201,33, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
-
-#encomendas_box:hover {
-  background-color: #eea053;
+.navbar-toggler {
+  --bs-navbar-toggler-border-color: var(--primary) !important;
 }
 
-#encomendas_box {
-  height: 33px;
-  width: 117px;
-  background-color: #D38130;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-  
+.btn-outline-success {
+  --bs-btn-color: var(--primary) !important;
+  --bs-btn-border-color: var(--primary) !important;
+  --bs-btn-hover-color: var(--brown) !important;
+  --bs-btn-hover-bg: var(--primary) !important;
+  --bs-btn-hover-border-color: var(--primary) !important;
+  --bs-btn-focus-shadow-rgb: 25,135,84;
+  --bs-btn-active-color: var(--brown) !important;
+  --bs-btn-active-bg: var(--primary) !important;;
+  --bs-btn-active-border-color: var(--primary) !important;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color:#eea516 !important;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #eea516 !important;
+  --bs-gradient: none;
 }
-
-#divBusca {
-  background-color:#F3F0E3;
-  border-radius:10px;
-  margin-top: 5px;
-  width:300px;
-  height:32px;
-}
-
-#txtBusca {
-  float:left;
-  background-color:transparent;
-  padding-left:5px;
-  font-size:18px;
-  border:none;
-  height:32px;
-  width: 280px;
-}
-
-#divBusca img {
-  padding-top: 11px;
-  float:left;
-}
-
 .main-content {
   display: flex;
   flex-direction: row;
