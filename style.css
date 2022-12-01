@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=My+Soul&display=swap");
 
 :root {
   --brown: #5b3435;
-  --primary: #ffc921 ;
+  --primary: #ffc921;
 }
 * {
   box-sizing: border-box;
@@ -11,284 +11,282 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #F3EBD2 !important;
+  background-color: #f3ebd2 !important;
 }
 
 /*COR DO MENU*/
-.navbar{
-    padding: 0 !important;
-    background-color: var(--brown) !important;
+.navbar {
+  background-color: var(--brown) !important;
+  --bs-navbar-toggler-focus-width: 0 !important;
 }
 
 /*UNIÃO DAS DIVS IMAGEM DA PADARIA E MENU*/
-.inicio_marrom{
-    background-color: var(--brown) ;
+.inicio_marrom {
+  background-color: var(--brown);
 }
 
 /*COR DA LETRA DO  MENU*/
-.nav-link{
-  color:rgb(211, 211, 211) !important;
+.nav-link {
+  color: rgb(211, 211, 211) !important;
 }
 
 /*Muda a cor dos itens do menu para amarelo*/
-.nav-link:hover{
-  color: var(--primary)!important;
+.nav-link:hover {
+  color: var(--primary) !important;
 }
 
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,201,33, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+  --bs-navbar-toggler-border-color: var(--primary) !important;
+}
 /*Menu para baixo do Login*/
-.dropdown-menu{
-    text-align: center;
+.dropdown-menu {
+  text-align: center;
 }
-
 
 /*Pesquisar ficar dourado - Botão*/
 .btn-outline-success {
-    --bs-btn-color: var(--primary) !important;
-    --bs-btn-border-color: var(--primary) !important;
-    --bs-btn-hover-color: var(--brown) !important;
-    --bs-btn-hover-bg: var(--primary) !important;
-    --bs-btn-hover-border-color: var(--primary) !important;
-    --bs-btn-focus-shadow-rgb: 25,135,84;
-    --bs-btn-active-color: var(--brown) !important;
-    --bs-btn-active-bg: var(--primary) !important;;
-    --bs-btn-active-border-color: var(--primary) !important;
-    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color:#eea516 !important;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #eea516 !important;
-    --bs-gradient: none;
-  }
+  --bs-btn-color: var(--primary) !important;
+  --bs-btn-border-color: var(--primary) !important;
+  --bs-btn-hover-color: var(--brown) !important;
+  --bs-btn-hover-bg: var(--primary) !important;
+  --bs-btn-hover-border-color: var(--primary) !important;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: var(--brown) !important;
+  --bs-btn-active-bg: var(--primary) !important;
+  --bs-btn-active-border-color: var(--primary) !important;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba (0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #eea516 !important;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #eea516 !important;
+  --bs-gradient: none;
+}
 
-  /*id do conjunto carrossel*/
-  #carouselExampleCaptions{
-    padding-bottom: 0px;
-  }
+/*id do conjunto carrossel*/
+#carouselExampleCaptions {
+  padding-bottom: 0px;
+}
 
-  /* primeira parte da tela principal*/
-    .main-content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    .main-content img{
-        display: block;
-        margin-top: 5px;
-    }
-    
-    
-    .column-right {
-        flex: 1;
-        text-align: center;
-        justify-content: right;
-        padding: 10px;
-        color: var(--brown) ;
-    }
-    
-    .column-right h1 {
-        padding: 10% 15% 0; /*superior, direita, inferior, esquerda*/
-    }
-    
-    .column-right h4 {
-        padding: 5% 10%;
-    }
+/* primeira parte da tela principal*/
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.main-content img {
+  display: block;
+  margin-top: 5px;
+}
 
-  /* Segunda parte da tela principal*/
-  
-    .main-content2 {
-        padding-top: 10px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        padding-bottom: 60px;
-    }
-    
-    .main-content2 img{
-        display: block;
-        margin-top: 5px;
-    }
-  
-  .column-right2 {
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align: center;
-    color: var(--brown);
-    padding-right: 2%;
-    }
-    
-    .column-left2 {
-        padding-left: 2%;
-    }
-    
-    .column-right2 h3 {
-        font-style: oblique;
-    }
-    .column-right2 h6 {
-        text-align:left;
-        font-weight: bold;
-    }
+.column-right {
+  flex: 1;
+  text-align: center;
+  justify-content: right;
+  padding: 10px;
+  color: var(--brown);
+}
 
-    /*Configurando o Form contato*/
-    .contatoForm{
-        position:relative;
-        left:5%; /*deixa alinhado a esquerda*/
-        width:35%;
-    }
+.column-right h1 {
+  padding: 10% 15% 0; /*superior, direita, inferior, esquerda*/
+}
 
-    .contatoForm h1{
-        font-size: 50px;
-        color: var(--brown) ;
-    }
+.column-right h4 {
+  padding: 5% 10%;
+}
 
+/* Segunda parte da tela principal*/
 
-  /*PARTE DO FOOTER DA PAGINA PRINCIPAL*/
-    footer{
-        text-align: center;
-        color: #B0B888;
-        padding-top: 70px;
-        background-color: var(--brown) ;
-    }
-    
-    footer h1{
-        font-family: 'My Soul', cursive;
-        font-size: 50px;
-        padding-bottom: 10px;
-    }
-    
-    .nav-link-footer{
-        color:#B0B888;
-    }
-    
-    .divsFooter {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        padding-bottom: 70px;
-    }
-    
-    .footerEsquerda {
-        width: 50%;
-        padding-left: 10%;
-    }
-    
-    .footerMeio {
-        padding-top: 60px;
-        padding-left: 15%;
-        padding-right: 15%; 
-        font-size: 20px;
-    }
-    
-    .footerDireita {
-        display: flex;
-        flex-direction:column;
-        justify-content:center;
-        padding-top: 60px;
-        padding-right: 10%;
-    }
-  
-    .smart{
-        padding-bottom: 10px;
-    }
-    
-    .apps {
-        padding-top: 8px;
-    }
-    
-    .desenvolvedores {
-        padding-bottom: 20px;
-        font-size: 20px;
-    }
+.main-content2 {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.main-content2 img {
+  display: block;
+  margin-top: 5px;
+}
+
+.column-right2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--brown);
+  padding-right: 2%;
+}
+
+.column-left2 {
+  padding-left: 2%;
+}
+
+.column-right2 h3 {
+  font-style: oblique;
+}
+.column-right2 h6 {
+  text-align: left;
+  font-weight: bold;
+}
+
+/*Configurando o Form contato*/
+.contatoForm {
+  position: relative;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.contatoForm h1 {
+  font-size: 50px;
+  color: var(--brown);
+}
+
+/*PARTE DO FOOTER DA PAGINA PRINCIPAL*/
+footer {
+  text-align: center;
+  color: #b0b888;
+  padding-top: 70px;
+  background-color: var(--brown);
+}
+
+footer h1 {
+  font-family: "My Soul", cursive;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.nav-link-footer {
+  color: #b0b888;
+}
+
+.nav-link-footer:hover {
+  color: #eea516;
+}
+
+.divsFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footerEsquerda {
+  width: 50%;
+}
+
+.footerMeio {
+  align-self: center;
+  font-size: 25px;
+}
+
+.footerDireita {
+  align-self: center;
+}
+
+.smart {
+  padding-bottom: 10px;
+}
+
+.apps {
+  padding-top: 8px;
+}
+
+.desenvolvedores {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
 
 /*FOOTER ATÉ AQUI*/
 
 /* primeira parte da tela da página aPadaria*/
 
-#botaoEnviar2{
-    background-color: var(--brown);
-    color: var(--primary);
-    padding: 10px 50px 10px 50px;
-    
+#botaoEnviar2 {
+  background-color: var(--brown);
+  color: var(--primary);
+  padding: 10px 50px 10px 50px;
 }
 
 .main-contentPadaria {
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.main-contentPadaria img{
-    display: flex;
-    margin-top: 5px;
+.main-contentPadaria img {
+  display: flex;
+  margin-top: 5px;
 }
 
-.column-meio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.column-meio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.column-meio img{
-    border: 2px solid var(--brown);
-        
+.column-meio img {
+  border: 2px solid var(--brown);
 }
 
 .column-cima {
-    flex: 1;
-    text-align: center;
-    justify-content: right;
-    padding: 0% 15% 5% 15%;
-    color: var(--brown) ;
+  flex: 1;
+  text-align: center;
+  justify-content: right;
+  padding: 0% 15% 5% 15%;
+  color: var(--brown);
 }
 
 .column-cima h1 {
-    padding: 10% 15% 0; /*superior, direita, inferior, esquerda*/
+  padding: 10% 15% 0; /*superior, direita, inferior, esquerda*/
 }
 
 .column-cima h4 {
-    padding: 5% 10%;
+  padding: 5% 10%;
 }
 
-.column-final{
-    padding: 15% 30% 10% 30%; 
-    text-align: center;
+.column-final {
+  padding: 15% 30% 10% 30%;
+  text-align: center;
 }
 
 /*PAGINA CATÁLOGO*/
 
-#h3Catalogo{
-    padding-top: 10%;
-    padding-bottom: 10%;
-    text-align: center;
-    font-size: 50px;
+#h3Catalogo {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  font-size: 50px;
 }
 
-
-
-#textoCatalogo{
-    text-align: center;
-    padding-bottom: 0px;
+#textoCatalogo {
+  text-align: center;
+  padding-bottom: 0px;
 }
 
-#imagemEtextoCatalogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#imagemEtextoCatalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#AdicionarCatalogo{
-    background-color: var(--primary);
-    color: var(--brown);
-    padding: 0 15 0 15;
+#AdicionarCatalogo {
+  background-color: var(--primary);
+  color: var(--brown);
+  padding: 0 15 0 15;
 }
 
-.table-responsive img{
-    width: 450px;
+.table-responsive img {
+  width: 450px;
 }
 
-#contatoFormCatalogo{
-    padding-top: 10px;
+#contatoFormCatalogo {
+  padding-top: 10px;
 }
