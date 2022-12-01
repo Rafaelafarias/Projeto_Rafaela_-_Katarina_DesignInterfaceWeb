@@ -46,6 +46,7 @@ body {
 .navbar-toggler {
   --bs-navbar-toggler-border-color: var(--primary) !important;
 }
+
 /*Menu para baixo do Login*/
 .dropdown-menu {
   text-align: center;
@@ -154,14 +155,8 @@ body {
 footer {
   text-align: center;
   color: #b0b888;
-  padding-top: 70px;
+  padding-top: 40px;
   background-color: var(--brown);
-}
-
-footer h1 {
-  font-family: "My Soul", cursive;
-  font-size: 50px;
-  padding-bottom: 10px;
 }
 
 .nav-link-footer {
@@ -179,13 +174,10 @@ footer h1 {
   flex-wrap: wrap;
 }
 
-.footerEsquerda {
-  width: 50%;
-}
-
+/*é o footer da esquerda agora, tem o nav bar*/
 .footerMeio {
   align-self: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .footerDireita {
@@ -215,45 +207,25 @@ footer h1 {
   padding: 10px 50px 10px 50px;
 }
 
-.main-contentPadaria {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.main-contentPadaria img {
-  display: flex;
-  margin-top: 5px;
-}
-
-.column-meio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.column-meio img {
-  border: 2px solid var(--brown);
-}
-
 .column-cima {
   flex: 1;
   text-align: center;
-  justify-content: right;
-  padding: 0% 15% 5% 15%;
+  padding: 10% 25% 10% 25%; /*superior, direita, inferior, esquerda*/
   color: var(--brown);
+  align-items: center;
 }
 
 .column-cima h1 {
-  padding: 10% 15% 0; /*superior, direita, inferior, esquerda*/
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 65px;
 }
 
-.column-cima h4 {
-  padding: 5% 10%;
+#textoPadaria {
+  padding-top: 60px;
 }
 
 .column-final {
-  padding: 15% 30% 10% 30%;
+  padding: 5% 30% 10% 30%;
   text-align: center;
 }
 
@@ -263,7 +235,13 @@ footer h1 {
   padding-top: 10%;
   padding-bottom: 10%;
   text-align: center;
-  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+#carrinho-de-compras {
+  width: 4%;
 }
 
 #textoCatalogo {
